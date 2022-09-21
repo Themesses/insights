@@ -1,6 +1,6 @@
 import React from "react";
-import { BsFillCheckCircleFill } from "react-icons/bs";
-import { MdOutlineRadioButtonUnchecked } from "react-icons/md";
+import { CheckCircleFillIcon } from "@primer/octicons-react";
+import { CircleIcon } from "@primer/octicons-react";
 interface ContextFilterOptionProps {
   children?: any;
   isSelected?: boolean;
@@ -17,9 +17,9 @@ const ContextFilterOption: React.FC<ContextFilterOptionProps> = ({ children, isS
     >
       <div className="flex w-full items-center">
         {isSelected ? (
-          <BsFillCheckCircleFill className="text-xl  text-light-orange-9" />
+          <CheckCircleFillIcon size={18} className="text-xl  text-light-orange-9" />
         ) : (
-          <MdOutlineRadioButtonUnchecked className="text-xl  stroke-light-orange-2 stroke-1 text-light-slate-6" />
+          <CircleIcon size={18} className="text-xl text-light-slate-6" />
         )}
         <span className="ml-2">{children}</span>
         <span className="px-1 ml-auto rounded-xl bg-light-orange-5 text-sm text-light-orange-10">
